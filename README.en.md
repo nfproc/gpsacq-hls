@@ -16,12 +16,13 @@ The base program is available for download at the following page:
 https://www.rf-world.jp/bn/RFW13/RFW13DLS.shtml
 
 You will find a brief explanation and evaluation results of the implemented circuit in
-the following article (which will be available on IEEE Xplore in early 2026):
+the following article:
 
 > Naoki Fujieda, Rei Yokoyama, and Takuji Ebinuma: A flexible FPGA implementation
 > of GNSS signal acquisition circuit using high level synthesis, 16th International
 > Workshop on Advances in Networking and Computing (WANC-16) held in conjunction with
-> CANDAR '25, accepted (11/2025).
+> CANDAR '25, pp. 365-367 (11/2025).
+> [DOI: [10.1109/CANDARW68385.2025.00070](https://doi.org/10.1109/CANDARW68385.2025.00070)
 
 The archive of the syntheses logs (`autobuild/log`) collected in the evaluations for
 the above paper is available at the following URL:
