@@ -38,6 +38,7 @@ The hierarchy of the repository is as follows:
   - `ip_dir`: temporary folder for IP core
   - `log`: folder to save syntheses logs
   - `autobuild_hls.rb`: automation script for Vitis HLS
+  - `autobuild_hls_new.rb`: automation script for Vitis HLS (w/ Vitis Unified IDE)
   - `autobuild_syn.rb`: automation script for Vivado
   - `build.tcl`: script called by Vitis HLS
   - `build_vivado.tcl`: script called by Vivado
@@ -133,6 +134,10 @@ The standard names of the folders are `hls_proj` (HLS) and `fpga_proj` (logic).
 The script of automated high level synthesis is `autobuild_hls.rb`.
 Please adjust the values of the constants from `HLS_DIR` (7th line) to `BASE_DIR`
 (11th line) according to your environment.
+If you are using Vitis Unified IDE, added from Vitis HLS 2023.2, use the new script
+`autobuild_hls_new.rb` instead.
+In this case, the constatnts to be adjusted are from `VITIS_DIR` (9th line) to
+`BASE_DIR` (15th line).
 For each pair of P and F, the script repeatedly conducts high level synthesis while
 increasing C.
 When the number of required LUTs exceeds 50,000, syntheses for further C are skipped,
@@ -154,7 +159,7 @@ Copyright is reserved by the Digital Systems Laboratory, Aichi Institute of Tech
 These files are licensed under the New BSD license.
 The code includes contributions by Rei Yokoyama, an alumnus of the lab.
 
-Copyright (C) 2024-2025 Digital Systems Laboratory. All rights reserved.
+Copyright (C) 2024-2026 Digital Systems Laboratory. All rights reserved.
 
 The C++ files 'gpsacq_hw.cpp' and 'gpsacq_main.cpp' are derived from the program
 'gpsacq.c' developed by Takuji Ebinuma and available at the following URL:
